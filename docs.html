@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Documentation - Chris DFS Lab</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f6f8;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background: #111827;
+            color: white;
+            padding: 25px;
+            text-align: center;
+        }
+
+        nav {
+            background: #1f2937;
+            padding: 12px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        .card {
+            background: white;
+            padding: 25px;
+            margin-bottom: 20px;
+            border-radius: 12px;
+            box-shadow: 0 2px 10px rgba(0,0,0,.08);
+        }
+
+        ul, ol {
+            line-height: 1.8;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>📘 Documentation</h1>
+    <p>DFS tool notes, workflows, and upload requirements</p>
+</header>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="mlb.html">MLB</a>
+    <a href="soccer.html">Soccer</a>
+    <a href="docs.html">Docs</a>
+</nav>
+
+<div class="container">
+
+    <div class="card">
+        <h2>⚾ MLB Workflow</h2>
+        <ol>
+            <li>Upload the DraftKings slate CSV.</li>
+            <li>Run the MLB builder/trimmer notebook.</li>
+            <li>Review generated lineups and exposure report.</li>
+            <li>Select the final portfolio based on stack quality and exposure balance.</li>
+        </ol>
+    </div>
+
+    <div class="card">
+        <h2>⚾ MLB Notes</h2>
+        <ul>
+            <li>Primary focus: stacked DraftKings lineups.</li>
+            <li>Uses Name(ID) export format.</li>
+            <li>Avoids hitters against opposing starting pitchers.</li>
+            <li>Includes exposure reporting.</li>
+        </ul>
+    </div>
+
+    <div class="card">
+        <h2>⚽ Soccer Workflow</h2>
+        <ol>
+            <li>Run the Player Ratings Generator.</li>
+            <li>Use the enriched ratings CSV in the Lineup Builder.</li>
+            <li>Generate DraftKings lineups.</li>
+            <li>Run the Lineup Trimmer.</li>
+            <li>Review final portfolio and exposures.</li>
+        </ol>
+    </div>
+
+    <div class="card">
+        <h2>⚽ Soccer Notes</h2>
+        <ul>
+            <li>Salary range generally targets $49,000–$50,000.</li>
+            <li>Minimum three teams required.</li>
+            <li>Goalkeeper opponent controls are included.</li>
+            <li>Portfolio trimming and exposure reporting are included.</li>
+        </ul>
+    </div>
+
+    <div class="card">
+        <h2>Future Documentation</h2>
+        <ul>
+            <li>NHL optimizer notes</li>
+            <li>NBA late-swap notes</li>
+            <li>NFL late-swap notes</li>
+            <li>MMA optimizer notes</li>
+            <li>NASCAR model notes</li>
+            <li>DFS Tracker notes</li>
+        </ul>
+    </div>
+
+</div>
+
+</body>
+</html>
