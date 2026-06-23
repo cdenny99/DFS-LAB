@@ -2,47 +2,143 @@
 <html>
 <head>
     <title>Soccer DFS - Chris DFS Lab</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f6f8;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background: #111827;
+            color: white;
+            padding: 25px;
+            text-align: center;
+        }
+
+        nav {
+            background: #1f2937;
+            padding: 12px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        .card {
+            background: white;
+            padding: 25px;
+            margin-bottom: 20px;
+            border-radius: 12px;
+            box-shadow: 0 2px 10px rgba(0,0,0,.08);
+        }
+
+        .button {
+            display: inline-block;
+            background: #2563eb;
+            color: white;
+            padding: 10px 16px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-right: 10px;
+            margin-bottom: 10px;
+        }
+
+        ul {
+            line-height: 1.8;
+        }
+    </style>
 </head>
+
 <body>
 
-<p><a href="index.html">← Back to Home</a></p>
+<header>
+    <h1>⚽ Soccer DFS</h1>
+    <p>DraftKings Soccer Ratings, Builder, and Trimmer</p>
+</header>
 
-<h1>⚽ Soccer DFS</h1>
+<nav>
+    <a href="index.html">Home</a>
+    <a href="mlb.html">MLB</a>
+    <a href="soccer.html">Soccer</a>
+</nav>
 
-<h2>Tools</h2>
+<div class="container">
 
-<p>
-<a href="https://colab.research.google.com/drive/1uEXZpzbKY4fiB76FC56GUGAymGI1UfT4" target="_blank">
-Player Ratings Generator
-</a>
-</p>
+    <div class="card">
+        <h2>Soccer Tools</h2>
 
-<p>
-<a href="https://colab.research.google.com/drive/1S9EtDgTH-BR5VFsSx3BvXBW2ultC-v5d?usp=sharing" target="_blank">
-Lineup Builder
-</a>
-</p>
+        <a class="button"
+           href="https://colab.research.google.com/drive/1uEXZpzbKY4fiB76FC56GUGAymGI1UfT4"
+           target="_blank">
+           Ratings Generator
+        </a>
 
-<p>
-<a href="https://colab.research.google.com/drive/1ww1GlQTUQJeXadPJBt5ezJkay97cIafe" target="_blank">
-Lineup Trimmer
-</a>
-</p>
+        <a class="button"
+           href="https://colab.research.google.com/drive/1S9EtDgTH-BR5VFsSx3BvXBW2ultC-v5d?usp=sharing"
+           target="_blank">
+           Lineup Builder
+        </a>
 
-<h2>Inputs</h2>
-<ul>
-    <li>Player Pool CSV</li>
-    <li>2023 Stats CSV</li>
-    <li>2024 Stats CSV</li>
-    <li>DraftKings Salaries CSV</li>
-</ul>
+        <a class="button"
+           href="https://colab.research.google.com/drive/1ww1GlQTUQJeXadPJBt5ezJkay97cIafe"
+           target="_blank">
+           Lineup Trimmer
+        </a>
+    </div>
 
-<h2>Outputs</h2>
-<ul>
-    <li>Player Model Ratings</li>
-    <li>Optimized Lineups</li>
-    <li>Trimmed Portfolio</li>
-</ul>
+    <div class="card">
+        <h2>Workflow</h2>
+        <ol>
+            <li>Run the Ratings Generator</li>
+            <li>Use the enriched ratings CSV in the Lineup Builder</li>
+            <li>Send generated lineups into the Lineup Trimmer</li>
+            <li>Review trimmed portfolio and exposures</li>
+        </ol>
+    </div>
+
+    <div class="card">
+        <h2>Inputs Required</h2>
+        <ul>
+            <li>Player Pool CSV</li>
+            <li>2023 Stats CSV</li>
+            <li>2024 Stats CSV</li>
+            <li>Enriched Ratings CSV</li>
+            <li>DraftKings Salaries CSV</li>
+        </ul>
+    </div>
+
+    <div class="card">
+        <h2>Current Features</h2>
+        <ul>
+            <li>Model rating generation</li>
+            <li>DraftKings lineup optimization</li>
+            <li>Salary cap controls</li>
+            <li>Minimum three-team rule</li>
+            <li>Goalkeeper vs opponent controls</li>
+            <li>Portfolio trimming and exposure reporting</li>
+        </ul>
+    </div>
+
+    <div class="card">
+        <h2>Version</h2>
+        <p>Soccer DFS Suite v2026.06</p>
+    </div>
+
+</div>
 
 </body>
 </html>
