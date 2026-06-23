@@ -2,17 +2,93 @@
 <html>
 <head>
     <title>Chris DFS Lab</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f6f8;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background: #111827;
+            color: white;
+            padding: 25px;
+            text-align: center;
+        }
+
+        nav {
+            background: #1f2937;
+            padding: 12px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        .card {
+            background: white;
+            padding: 25px;
+            margin-bottom: 20px;
+            border-radius: 12px;
+            box-shadow: 0 2px 10px rgba(0,0,0,.08);
+        }
+
+        .button {
+            display: inline-block;
+            background: #2563eb;
+            color: white;
+            padding: 10px 16px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+    </style>
 </head>
+
 <body>
+
+<header>
     <h1>🏆 Chris DFS Lab</h1>
-    <p>Your DFS lineup builder dashboard.</p>
+    <p>DFS lineup builders, trimmers, and model tools</p>
+</header>
 
-    <h2>Sports</h2>
+<nav>
+    <a href="index.html">Home</a>
+    <a href="mlb.html">MLB</a>
+    <a href="soccer.html">Soccer</a>
+</nav>
 
-    <p><a href="mlb.html">⚾ MLB DFS</a></p>
-    <p><a href="soccer.html">⚽ Soccer DFS</a></p>
+<div class="container">
 
-    <h2>Coming Soon</h2>
-    <p>🏒 NHL | 🏀 NBA | 🏈 NFL | 🥊 MMA | 🏎 NASCAR | ⛳ PGA</p>
+    <div class="card">
+        <h2>⚾ MLB DFS</h2>
+        <p>Lineup builder and trimmer for DraftKings MLB slates.</p>
+        <a class="button" href="mlb.html">Open MLB Tools</a>
+    </div>
+
+    <div class="card">
+        <h2>⚽ Soccer DFS</h2>
+        <p>Ratings generator, lineup builder, and lineup trimmer for DraftKings Soccer.</p>
+        <a class="button" href="soccer.html">Open Soccer Tools</a>
+    </div>
+
+    <div class="card">
+        <h2>Coming Soon</h2>
+        <p>🏒 NHL | 🏀 NBA | 🏈 NFL | 🥊 MMA | 🏎 NASCAR | ⛳ PGA</p>
+    </div>
+
+</div>
+
 </body>
 </html>
