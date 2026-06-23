@@ -2,24 +2,124 @@
 <html>
 <head>
     <title>MLB DFS - Chris DFS Lab</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f6f8;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background: #111827;
+            color: white;
+            padding: 25px;
+            text-align: center;
+        }
+
+        nav {
+            background: #1f2937;
+            padding: 12px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        .card {
+            background: white;
+            padding: 25px;
+            margin-bottom: 20px;
+            border-radius: 12px;
+            box-shadow: 0 2px 10px rgba(0,0,0,.08);
+        }
+
+        .button {
+            display: inline-block;
+            background: #2563eb;
+            color: white;
+            padding: 10px 16px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        ul {
+            line-height: 1.8;
+        }
+    </style>
 </head>
+
 <body>
-    <p><a href="index.html">← Back to Home</a></p>
 
+<header>
     <h1>⚾ MLB DFS</h1>
+    <p>DraftKings MLB Optimization Suite</p>
+</header>
 
-    <h2>Tools</h2>
+<nav>
+    <a href="index.html">Home</a>
+    <a href="mlb.html">MLB</a>
+    <a href="soccer.html">Soccer</a>
+</nav>
 
-    <p>
-        <a href="https://colab.research.google.com/drive/1Y85chnQpKohSS92qjMcXzRGFl3WJACoo" target="_blank">
-            Open MLB Lineup Builder / Trimmer
+<div class="container">
+
+    <div class="card">
+        <h2>MLB Builder & Trimmer</h2>
+
+        <p>
+            Current production version of the MLB lineup builder and
+            portfolio trimmer.
+        </p>
+
+        <a class="button"
+           href="https://colab.research.google.com/drive/1Y85chnQpKohSS92qjMcXzRGFl3WJACoo"
+           target="_blank">
+           Launch Builder
         </a>
-    </p>
+    </div>
 
-    <h2>Inputs Needed</h2>
-    <p>DraftKings slate upload</p>
+    <div class="card">
+        <h2>Inputs Required</h2>
 
-    <h2>Output</h2>
-    <p>Google Sheet with lineups and exposures</p>
+        <ul>
+            <li>DraftKings Slate CSV</li>
+        </ul>
+    </div>
+
+    <div class="card">
+        <h2>Current Features</h2>
+
+        <ul>
+            <li>5-man stack generation</li>
+            <li>No hitters vs opposing SP</li>
+            <li>Name(ID) export format</li>
+            <li>Exposure reporting</li>
+            <li>Portfolio trimming</li>
+        </ul>
+    </div>
+
+    <div class="card">
+        <h2>Version</h2>
+
+        <p>
+            MLB Builder v2026.06
+        </p>
+    </div>
+
+</div>
+
 </body>
 </html>
