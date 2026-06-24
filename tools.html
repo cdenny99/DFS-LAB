@@ -6,42 +6,50 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background: #f4f6f8;
+            background: #0b1120;
+            color: #e5e7eb;
             margin: 0;
             padding: 0;
         }
 
         header {
-            background: #111827;
+            background: linear-gradient(135deg, #111827, #1e3a8a);
             color: white;
-            padding: 25px;
+            padding: 35px;
             text-align: center;
+            border-bottom: 3px solid #22c55e;
         }
 
         nav {
-            background: #1f2937;
-            padding: 12px;
+            background: #020617;
+            padding: 14px;
             text-align: center;
+            border-bottom: 1px solid #1f2937;
         }
 
         nav a {
-            color: white;
-            margin: 0 15px;
+            color: #e5e7eb;
+            margin: 0 14px;
             text-decoration: none;
             font-weight: bold;
         }
 
+        nav a:hover {
+            color: #22c55e;
+        }
+
         .container {
-            max-width: 1000px;
+            max-width: 1200px;
             margin: 40px auto;
             padding: 0 20px;
         }
 
         .card {
-            background: white;
+            background: #111827;
             padding: 25px;
-            border-radius: 12px;
-            box-shadow: 0 2px 10px rgba(0,0,0,.08);
+            border-radius: 14px;
+            border: 1px solid #1f2937;
+            box-shadow: 0 4px 18px rgba(0,0,0,.35);
         }
 
         table {
@@ -49,14 +57,35 @@
             border-collapse: collapse;
         }
 
-        th, td {
+        th {
+            background: #1e293b;
+            color: #93c5fd;
             padding: 12px;
-            border-bottom: 1px solid #ddd;
             text-align: left;
         }
 
-        th {
-            background: #f1f5f9;
+        td {
+            padding: 12px;
+            border-bottom: 1px solid #1f2937;
+        }
+
+        tr:hover {
+            background: #172033;
+        }
+
+        .production {
+            color: #22c55e;
+            font-weight: bold;
+        }
+
+        .planned {
+            color: #facc15;
+            font-weight: bold;
+        }
+
+        .version {
+            color: #60a5fa;
+            font-weight: bold;
         }
     </style>
 </head>
@@ -65,7 +94,7 @@
 
 <header>
     <h1>🧰 Tool Registry</h1>
-    <p>Master inventory of DFS models and utilities</p>
+    <p>Master inventory of DFS models, optimizers, and utilities</p>
 </header>
 
 <nav>
@@ -81,7 +110,9 @@
 <div class="container">
 
     <div class="card">
+
         <table>
+
             <tr>
                 <th>Sport</th>
                 <th>Tool</th>
@@ -91,62 +122,79 @@
             </tr>
 
             <tr>
-                <td>MLB</td>
-                <td>Lineup Builder / Trimmer</td>
-                <td>Production</td>
-                <td>v2026.06</td>
-                <td>DraftKings slate upload, lineups, exposures</td>
+                <td>⚾ MLB</td>
+                <td>Builder / Trimmer</td>
+                <td class="production">Production</td>
+                <td class="version">v2026.06</td>
+                <td>Stacked lineup generation and portfolio trimming</td>
             </tr>
 
             <tr>
-                <td>Soccer</td>
-                <td>Player Ratings Generator</td>
-                <td>Production</td>
-                <td>v2026.06</td>
-                <td>Creates enriched model ratings</td>
+                <td>⚽ Soccer</td>
+                <td>Ratings Generator</td>
+                <td class="production">Production</td>
+                <td class="version">v2026.06</td>
+                <td>Creates enriched player ratings</td>
             </tr>
 
             <tr>
-                <td>Soccer</td>
+                <td>⚽ Soccer</td>
                 <td>Lineup Builder</td>
-                <td>Production</td>
-                <td>v2026.06</td>
-                <td>Builds DraftKings lineups from enriched data</td>
+                <td class="production">Production</td>
+                <td class="version">v2026.06</td>
+                <td>Builds DraftKings lineups</td>
             </tr>
 
             <tr>
-                <td>Soccer</td>
+                <td>⚽ Soccer</td>
                 <td>Lineup Trimmer</td>
-                <td>Production</td>
-                <td>v2026.06</td>
-                <td>Trims generated lineups into final portfolio</td>
+                <td class="production">Production</td>
+                <td class="version">v2026.06</td>
+                <td>Final portfolio management</td>
             </tr>
 
             <tr>
-                <td>NHL</td>
+                <td>🏒 NHL</td>
                 <td>Main Optimizer</td>
-                <td>Planned</td>
+                <td class="planned">Planned</td>
                 <td>-</td>
-                <td>Add current NHL builder later</td>
+                <td>To be added next</td>
             </tr>
 
             <tr>
-                <td>NBA</td>
+                <td>🏒 NHL</td>
+                <td>Showdown Builder</td>
+                <td class="planned">Planned</td>
+                <td>-</td>
+                <td>GC+CL2, PP1+OF, PP2+OF, GS+F</td>
+            </tr>
+
+            <tr>
+                <td>🏀 NBA</td>
                 <td>Late Swap Optimizer</td>
-                <td>Planned</td>
+                <td class="planned">Planned</td>
                 <td>-</td>
-                <td>Add current NBA late swap tool later</td>
+                <td>Current production Colab version</td>
             </tr>
 
             <tr>
-                <td>NFL</td>
+                <td>🏈 NFL</td>
                 <td>Late Swap / Trimmer</td>
-                <td>Planned</td>
+                <td class="planned">Planned</td>
                 <td>-</td>
-                <td>Add NFL workflow later</td>
+                <td>Future website integration</td>
+            </tr>
+
+            <tr>
+                <td>📊 Analytics</td>
+                <td>DFS Tracker</td>
+                <td class="planned">Planned</td>
+                <td>-</td>
+                <td>ROI and bankroll reporting</td>
             </tr>
 
         </table>
+
     </div>
 
 </div>
