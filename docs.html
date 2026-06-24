@@ -6,47 +6,69 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background: #f4f6f8;
+            background: #0b1120;
+            color: #e5e7eb;
             margin: 0;
             padding: 0;
         }
 
         header {
-            background: #111827;
+            background: linear-gradient(135deg, #111827, #1e3a8a);
             color: white;
-            padding: 25px;
+            padding: 35px;
             text-align: center;
+            border-bottom: 3px solid #22c55e;
         }
 
         nav {
-            background: #1f2937;
-            padding: 12px;
+            background: #020617;
+            padding: 14px;
             text-align: center;
+            border-bottom: 1px solid #1f2937;
         }
 
         nav a {
-            color: white;
-            margin: 0 15px;
+            color: #e5e7eb;
+            margin: 0 14px;
             text-decoration: none;
             font-weight: bold;
         }
 
+        nav a:hover {
+            color: #22c55e;
+        }
+
         .container {
-            max-width: 900px;
+            max-width: 1000px;
             margin: 40px auto;
             padding: 0 20px;
         }
 
         .card {
-            background: white;
+            background: #111827;
             padding: 25px;
-            margin-bottom: 20px;
-            border-radius: 12px;
-            box-shadow: 0 2px 10px rgba(0,0,0,.08);
+            margin-bottom: 22px;
+            border-radius: 14px;
+            border: 1px solid #1f2937;
+            box-shadow: 0 4px 18px rgba(0,0,0,.35);
+        }
+
+        h2 {
+            color: #93c5fd;
         }
 
         ul, ol {
             line-height: 1.8;
+        }
+
+        .tag {
+            display: inline-block;
+            background: #1e293b;
+            color: #facc15;
+            padding: 4px 10px;
+            border-radius: 999px;
+            font-size: 13px;
+            font-weight: bold;
         }
     </style>
 </head>
@@ -55,7 +77,7 @@
 
 <header>
     <h1>📘 Documentation</h1>
-    <p>DFS tool notes, workflows, and upload requirements</p>
+    <p>Workflows, upload requirements, and model notes</p>
 </header>
 
 <nav>
@@ -72,54 +94,66 @@
 
     <div class="card">
         <h2>⚾ MLB Workflow</h2>
+        <p><span class="tag">Production</span></p>
+
         <ol>
-            <li>Upload the DraftKings slate CSV.</li>
-            <li>Run the MLB builder/trimmer notebook.</li>
-            <li>Review generated lineups and exposure report.</li>
-            <li>Select the final portfolio based on stack quality and exposure balance.</li>
+            <li>Upload the DraftKings Slate CSV.</li>
+            <li>Run the MLB Builder / Trimmer notebook.</li>
+            <li>Review generated lineups.</li>
+            <li>Review exposure report.</li>
+            <li>Select final portfolio.</li>
         </ol>
     </div>
 
     <div class="card">
         <h2>⚾ MLB Notes</h2>
+
         <ul>
-            <li>Primary focus: stacked DraftKings lineups.</li>
-            <li>Uses Name(ID) export format.</li>
-            <li>Avoids hitters against opposing starting pitchers.</li>
-            <li>Includes exposure reporting.</li>
+            <li>Primary focus is stacked DraftKings lineups.</li>
+            <li>Name(ID) export format.</li>
+            <li>No hitters against opposing starting pitchers.</li>
+            <li>Exposure reporting included.</li>
+            <li>Portfolio trimming included.</li>
         </ul>
     </div>
 
     <div class="card">
         <h2>⚽ Soccer Workflow</h2>
+
         <ol>
-            <li>Run the Player Ratings Generator.</li>
-            <li>Use the enriched ratings CSV in the Lineup Builder.</li>
+            <li>Run Ratings Generator.</li>
+            <li>Create enriched ratings CSV.</li>
+            <li>Run Lineup Builder.</li>
             <li>Generate DraftKings lineups.</li>
-            <li>Run the Lineup Trimmer.</li>
-            <li>Review final portfolio and exposures.</li>
+            <li>Run Lineup Trimmer.</li>
+            <li>Review final exposures and portfolio.</li>
         </ol>
     </div>
 
     <div class="card">
         <h2>⚽ Soccer Notes</h2>
+
         <ul>
-            <li>Salary range generally targets $49,000–$50,000.</li>
-            <li>Minimum three teams required.</li>
-            <li>Goalkeeper opponent controls are included.</li>
-            <li>Portfolio trimming and exposure reporting are included.</li>
+            <li>Typical salary range: $49,000–$50,000.</li>
+            <li>Minimum 3 teams.</li>
+            <li>Goalkeeper opponent controls enabled.</li>
+            <li>Portfolio trimming and exposure reporting included.</li>
+            <li>Supports 20-max and single-entry workflows.</li>
         </ul>
     </div>
 
     <div class="card">
-        <h2>Future Documentation</h2>
+        <h2>📋 Future Documentation</h2>
+
         <ul>
-            <li>NHL optimizer notes</li>
-            <li>NBA late-swap notes</li>
-            <li>NFL late-swap notes</li>
-            <li>MMA optimizer notes</li>
-            <li>NASCAR model notes</li>
-            <li>DFS Tracker notes</li>
+            <li>🏒 NHL Optimizer</li>
+            <li>🏒 NHL Showdown Builder</li>
+            <li>🏀 NBA Optimizer</li>
+            <li>🏀 NBA Late Swap</li>
+            <li>🏈 NFL Late Swap</li>
+            <li>🥊 MMA Builder</li>
+            <li>🏎 NASCAR Builder</li>
+            <li>📊 DFS Tracker</li>
         </ul>
     </div>
 
