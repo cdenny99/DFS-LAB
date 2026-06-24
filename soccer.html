@@ -6,43 +6,59 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background: #f4f6f8;
+            background: #0b1120;
+            color: #e5e7eb;
             margin: 0;
             padding: 0;
         }
 
         header {
-            background: #111827;
+            background: linear-gradient(135deg, #111827, #1e3a8a);
             color: white;
-            padding: 25px;
+            padding: 35px;
             text-align: center;
+            border-bottom: 3px solid #22c55e;
         }
 
         nav {
-            background: #1f2937;
-            padding: 12px;
+            background: #020617;
+            padding: 14px;
             text-align: center;
+            border-bottom: 1px solid #1f2937;
         }
 
         nav a {
-            color: white;
-            margin: 0 15px;
+            color: #e5e7eb;
+            margin: 0 14px;
             text-decoration: none;
             font-weight: bold;
         }
 
+        nav a:hover {
+            color: #22c55e;
+        }
+
         .container {
-            max-width: 900px;
+            max-width: 1000px;
             margin: 40px auto;
             padding: 0 20px;
         }
 
         .card {
-            background: white;
+            background: #111827;
             padding: 25px;
-            margin-bottom: 20px;
-            border-radius: 12px;
-            box-shadow: 0 2px 10px rgba(0,0,0,.08);
+            margin-bottom: 22px;
+            border-radius: 14px;
+            border: 1px solid #1f2937;
+            box-shadow: 0 4px 18px rgba(0,0,0,.35);
+        }
+
+        h2 {
+            color: #93c5fd;
+        }
+
+        ul, ol {
+            line-height: 1.8;
         }
 
         .button {
@@ -57,8 +73,18 @@
             margin-bottom: 10px;
         }
 
-        ul {
-            line-height: 1.8;
+        .button:hover {
+            background: #1d4ed8;
+        }
+
+        .tag {
+            display: inline-block;
+            background: #1e293b;
+            color: #facc15;
+            padding: 4px 10px;
+            border-radius: 999px;
+            font-size: 13px;
+            font-weight: bold;
         }
     </style>
 </head>
@@ -67,7 +93,7 @@
 
 <header>
     <h1>⚽ Soccer DFS</h1>
-    <p>DraftKings Soccer Ratings, Builder, and Trimmer</p>
+    <p>Ratings Generator, Lineup Builder, and Trimmer</p>
 </header>
 
 <nav>
@@ -84,6 +110,7 @@
 
     <div class="card">
         <h2>Soccer Tools</h2>
+        <p><span class="tag">Production</span></p>
 
         <a class="button"
            href="https://colab.research.google.com/drive/1uEXZpzbKY4fiB76FC56GUGAymGI1UfT4"
@@ -107,10 +134,11 @@
     <div class="card">
         <h2>Workflow</h2>
         <ol>
-            <li>Run the Ratings Generator</li>
-            <li>Use the enriched ratings CSV in the Lineup Builder</li>
-            <li>Send generated lineups into the Lineup Trimmer</li>
-            <li>Review trimmed portfolio and exposures</li>
+            <li>Run the Player Ratings Generator.</li>
+            <li>Use the enriched ratings CSV in the Lineup Builder.</li>
+            <li>Generate DraftKings lineups.</li>
+            <li>Run the Lineup Trimmer.</li>
+            <li>Review final portfolio and exposures.</li>
         </ol>
     </div>
 
@@ -132,14 +160,14 @@
             <li>DraftKings lineup optimization</li>
             <li>Salary cap controls</li>
             <li>Minimum three-team rule</li>
-            <li>Goalkeeper vs opponent controls</li>
+            <li>Goalkeeper opponent controls</li>
             <li>Portfolio trimming and exposure reporting</li>
         </ul>
     </div>
 
     <div class="card">
         <h2>Version</h2>
-        <p>Soccer DFS Suite v2026.06</p>
+        <p><strong>v2026.06</strong> — Current production version</p>
     </div>
 
 </div>
