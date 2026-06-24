@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tool Registry - Chris DFS Lab</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f6f8;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background: #111827;
+            color: white;
+            padding: 25px;
+            text-align: center;
+        }
+
+        nav {
+            background: #1f2937;
+            padding: 12px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        .card {
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 2px 10px rgba(0,0,0,.08);
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            padding: 12px;
+            border-bottom: 1px solid #ddd;
+            text-align: left;
+        }
+
+        th {
+            background: #f1f5f9;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>🧰 Tool Registry</h1>
+    <p>Master inventory of DFS models and utilities</p>
+</header>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="mlb.html">MLB</a>
+    <a href="soccer.html">Soccer</a>
+    <a href="docs.html">Docs</a>
+    <a href="version-history.html">Version History</a>
+    <a href="tools.html">Tool Registry</a>
+</nav>
+
+<div class="container">
+
+    <div class="card">
+        <table>
+            <tr>
+                <th>Sport</th>
+                <th>Tool</th>
+                <th>Status</th>
+                <th>Version</th>
+                <th>Notes</th>
+            </tr>
+
+            <tr>
+                <td>MLB</td>
+                <td>Lineup Builder / Trimmer</td>
+                <td>Production</td>
+                <td>v2026.06</td>
+                <td>DraftKings slate upload, lineups, exposures</td>
+            </tr>
+
+            <tr>
+                <td>Soccer</td>
+                <td>Player Ratings Generator</td>
+                <td>Production</td>
+                <td>v2026.06</td>
+                <td>Creates enriched model ratings</td>
+            </tr>
+
+            <tr>
+                <td>Soccer</td>
+                <td>Lineup Builder</td>
+                <td>Production</td>
+                <td>v2026.06</td>
+                <td>Builds DraftKings lineups from enriched data</td>
+            </tr>
+
+            <tr>
+                <td>Soccer</td>
+                <td>Lineup Trimmer</td>
+                <td>Production</td>
+                <td>v2026.06</td>
+                <td>Trims generated lineups into final portfolio</td>
+            </tr>
+
+            <tr>
+                <td>NHL</td>
+                <td>Main Optimizer</td>
+                <td>Planned</td>
+                <td>-</td>
+                <td>Add current NHL builder later</td>
+            </tr>
+
+            <tr>
+                <td>NBA</td>
+                <td>Late Swap Optimizer</td>
+                <td>Planned</td>
+                <td>-</td>
+                <td>Add current NBA late swap tool later</td>
+            </tr>
+
+            <tr>
+                <td>NFL</td>
+                <td>Late Swap / Trimmer</td>
+                <td>Planned</td>
+                <td>-</td>
+                <td>Add NFL workflow later</td>
+            </tr>
+
+        </table>
+    </div>
+
+</div>
+
+</body>
+</html>
