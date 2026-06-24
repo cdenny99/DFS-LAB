@@ -2,10 +2,93 @@
 <html>
 <head>
     <title>Version History - Chris DFS Lab</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #0b1120;
+            color: #e5e7eb;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background: linear-gradient(135deg, #111827, #1e3a8a);
+            color: white;
+            padding: 35px;
+            text-align: center;
+            border-bottom: 3px solid #22c55e;
+        }
+
+        nav {
+            background: #020617;
+            padding: 14px;
+            text-align: center;
+            border-bottom: 1px solid #1f2937;
+        }
+
+        nav a {
+            color: #e5e7eb;
+            margin: 0 14px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #22c55e;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        .card {
+            background: #111827;
+            padding: 25px;
+            margin-bottom: 22px;
+            border-radius: 14px;
+            border: 1px solid #1f2937;
+            box-shadow: 0 4px 18px rgba(0,0,0,.35);
+        }
+
+        h1, h2 {
+            margin-top: 0;
+        }
+
+        h2 {
+            color: #93c5fd;
+        }
+
+        ul {
+            line-height: 1.8;
+        }
+
+        .version {
+            color: #22c55e;
+            font-weight: bold;
+        }
+
+        .tag {
+            display: inline-block;
+            background: #1e293b;
+            color: #facc15;
+            padding: 4px 10px;
+            border-radius: 999px;
+            font-size: 13px;
+            font-weight: bold;
+            margin-left: 8px;
+        }
+    </style>
 </head>
+
 <body>
 
-<h1>🕓 Version History</h1>
+<header>
+    <h1>🕓 Version History</h1>
+    <p>Production versions and major DFS model updates</p>
+</header>
 
 <nav>
     <a href="index.html">Home</a>
@@ -17,24 +100,43 @@
     <a href="roadmap.html">Roadmap</a>
 </nav>
 
-<h2>⚾ MLB</h2>
-<ul>
-    <li><strong>v2026.06</strong> - Current MLB builder/trimmer version</li>
-</ul>
+<div class="container">
 
-<h2>⚽ Soccer</h2>
-<ul>
-    <li><strong>v2026.06</strong> - Current Soccer ratings, builder, and trimmer suite</li>
-</ul>
+    <div class="card">
+        <h2>⚾ MLB</h2>
+        <ul>
+            <li>
+                <span class="version">v2026.06</span>
+                <span class="tag">Current</span>
+                — Current MLB builder/trimmer version.
+            </li>
+        </ul>
+    </div>
 
-<h2>Coming Soon</h2>
-<ul>
-    <li>NHL versions</li>
-    <li>NBA versions</li>
-    <li>NFL versions</li>
-    <li>MMA versions</li>
-    <li>NASCAR versions</li>
-</ul>
+    <div class="card">
+        <h2>⚽ Soccer</h2>
+        <ul>
+            <li>
+                <span class="version">v2026.06</span>
+                <span class="tag">Current</span>
+                — Current Soccer ratings, builder, and trimmer suite.
+            </li>
+        </ul>
+    </div>
+
+    <div class="card">
+        <h2>Coming Soon</h2>
+        <ul>
+            <li>🏒 NHL versions</li>
+            <li>🏀 NBA versions</li>
+            <li>🏈 NFL versions</li>
+            <li>🥊 MMA versions</li>
+            <li>🏎 NASCAR versions</li>
+            <li>⛳ PGA versions</li>
+        </ul>
+    </div>
+
+</div>
 
 </body>
 </html>
