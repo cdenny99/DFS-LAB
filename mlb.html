@@ -2,147 +2,89 @@
 <html>
 <head>
     <title>MLB DFS - Chris DFS Lab</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background: #0b1120;
-            color: #e5e7eb;
-            margin: 0;
-            padding: 0;
-        }
-
-        header {
-            background: linear-gradient(135deg, #111827, #1e3a8a);
-            color: white;
-            padding: 35px;
-            text-align: center;
-            border-bottom: 3px solid #22c55e;
-        }
-
-        nav {
-            background: #020617;
-            padding: 14px;
-            text-align: center;
-            border-bottom: 1px solid #1f2937;
-        }
-
-        nav a {
-            color: #e5e7eb;
-            margin: 0 14px;
-            text-decoration: none;
-            font-weight: bold;
-        }
-
-        nav a:hover {
-            color: #22c55e;
-        }
-
-        .container {
-            max-width: 1000px;
-            margin: 40px auto;
-            padding: 0 20px;
-        }
-
-        .card {
-            background: #111827;
-            padding: 25px;
-            margin-bottom: 22px;
-            border-radius: 14px;
-            border: 1px solid #1f2937;
-            box-shadow: 0 4px 18px rgba(0,0,0,.35);
-        }
-
-        h2 {
-            color: #93c5fd;
-        }
-
-        ul {
-            line-height: 1.8;
-        }
-
-        .button {
-            display: inline-block;
-            background: #2563eb;
-            color: white;
-            padding: 10px 16px;
-            border-radius: 8px;
-            text-decoration: none;
-            font-weight: bold;
-        }
-
-        .button:hover {
-            background: #1d4ed8;
-        }
-
-        .tag {
-            display: inline-block;
-            background: #1e293b;
-            color: #facc15;
-            padding: 4px 10px;
-            border-radius: 999px;
-            font-size: 13px;
-            font-weight: bold;
-        }
-    </style>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 
-<body>
+<body class="bg-dark text-light">
 
-<header>
-    <h1>⚾ MLB DFS</h1>
-    <p>DraftKings MLB Builder and Trimmer</p>
-</header>
+<nav class="navbar navbar-expand-lg navbar-dark bg-black border-bottom border-success">
+    <div class="container">
+        <a class="navbar-brand fw-bold" href="index.html">🏆 Chris DFS Lab</a>
 
-<nav>
-    <a href="index.html">Home</a>
-    <a href="mlb.html">MLB</a>
-    <a href="soccer.html">Soccer</a>
-    <a href="nhl.html">NHL</a>
-    <a href="docs.html">Docs</a>
-    <a href="version-history.html">Version History</a>
-    <a href="tools.html">Tool Registry</a>
-    <a href="roadmap.html">Roadmap</a>
+        <div class="navbar-nav">
+            <a class="nav-link active" href="mlb.html">MLB</a>
+            <a class="nav-link" href="soccer.html">Soccer</a>
+            <a class="nav-link" href="nhl.html">NHL</a>
+            <a class="nav-link" href="docs.html">Docs</a>
+            <a class="nav-link" href="tools.html">Registry</a>
+            <a class="nav-link" href="roadmap.html">Roadmap</a>
+        </div>
+    </div>
 </nav>
 
-<div class="container">
+<header class="text-center py-5 bg-primary bg-gradient">
+    <div class="container">
+        <h1 class="display-5 fw-bold">⚾ MLB DFS</h1>
+        <p class="lead">DraftKings MLB Builder and Trimmer</p>
+    </div>
+</header>
 
-    <div class="card">
-        <h2>MLB Builder / Trimmer</h2>
-        <p><span class="tag">Production</span></p>
-        <p>Current MLB lineup builder and portfolio trimmer for DraftKings slates.</p>
+<main class="container py-5">
 
-        <a class="button"
-           href="https://colab.research.google.com/drive/1Y85chnQpKohSS92qjMcXzRGFl3WJACoo"
-           target="_blank">
-           Launch MLB Tool
-        </a>
+    <div class="card bg-black text-light border-secondary mb-4">
+        <div class="card-body">
+            <span class="badge bg-success mb-2">Production</span>
+            <h3>MLB Builder / Trimmer</h3>
+            <p>Current MLB lineup builder and portfolio trimmer for DraftKings slates.</p>
+
+            <a class="btn btn-primary"
+               href="https://colab.research.google.com/drive/1Y85chnQpKohSS92qjMcXzRGFl3WJACoo"
+               target="_blank">
+               Launch MLB Tool
+            </a>
+        </div>
     </div>
 
-    <div class="card">
-        <h2>Inputs Required</h2>
-        <ul>
-            <li>DraftKings Slate CSV</li>
-        </ul>
+    <div class="row g-4">
+
+        <div class="col-md-6">
+            <div class="card bg-black text-light border-secondary h-100">
+                <div class="card-body">
+                    <h4 class="text-info">Inputs Required</h4>
+                    <ul>
+                        <li>DraftKings Slate CSV</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6">
+            <div class="card bg-black text-light border-secondary h-100">
+                <div class="card-body">
+                    <h4 class="text-info">Current Features</h4>
+                    <ul>
+                        <li>Stacked DraftKings MLB lineup generation</li>
+                        <li>Portfolio trimming</li>
+                        <li>Name(ID) export format</li>
+                        <li>No hitters against opposing starting pitchers</li>
+                        <li>Exposure reporting</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
     </div>
 
-    <div class="card">
-        <h2>Current Features</h2>
-        <ul>
-            <li>Stacked DraftKings MLB lineup generation</li>
-            <li>Portfolio trimming</li>
-            <li>Name(ID) export format</li>
-            <li>No hitters against opposing starting pitchers</li>
-            <li>Exposure reporting</li>
-        </ul>
+    <div class="card bg-black text-light border-secondary mt-4">
+        <div class="card-body">
+            <h4 class="text-info">Version</h4>
+            <p><strong>v2026.06</strong> — Current production version</p>
+        </div>
     </div>
 
-    <div class="card">
-        <h2>Version</h2>
-        <p><strong>v2026.06</strong> — Current production version</p>
-    </div>
-
-</div>
+</main>
 
 </body>
 </html>
