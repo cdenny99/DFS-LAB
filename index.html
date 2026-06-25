@@ -15,7 +15,7 @@
         header {
             background: linear-gradient(135deg, #111827, #1e3a8a);
             color: white;
-            padding: 40px;
+            padding: 45px 20px;
             text-align: center;
             border-bottom: 3px solid #22c55e;
         }
@@ -29,7 +29,7 @@
 
         nav a {
             color: #e5e7eb;
-            margin: 0 14px;
+            margin: 0 12px;
             text-decoration: none;
             font-weight: bold;
         }
@@ -39,27 +39,27 @@
         }
 
         .container {
-            max-width: 1100px;
+            max-width: 1200px;
             margin: 40px auto;
             padding: 0 20px;
         }
 
         .section-title {
             color: #93c5fd;
-            margin-top: 40px;
-            margin-bottom: 15px;
+            margin-top: 45px;
+            margin-bottom: 18px;
         }
 
         .grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
             gap: 22px;
         }
 
         .card {
             background: #111827;
-            padding: 25px;
-            border-radius: 14px;
+            padding: 24px;
+            border-radius: 16px;
             border: 1px solid #1f2937;
             box-shadow: 0 4px 18px rgba(0,0,0,.35);
         }
@@ -67,6 +67,10 @@
         .card h3 {
             margin-top: 0;
             color: #f9fafb;
+        }
+
+        .card p {
+            color: #cbd5e1;
         }
 
         .button {
@@ -84,14 +88,23 @@
             background: #1d4ed8;
         }
 
-        .coming {
-            background: #1e293b;
-            color: #facc15;
-            padding: 8px 12px;
-            border-radius: 999px;
+        .badge {
             display: inline-block;
+            background: #1e293b;
+            color: #22c55e;
+            padding: 5px 10px;
+            border-radius: 999px;
+            font-size: 13px;
             font-weight: bold;
-            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+
+        .planned {
+            color: #facc15;
+        }
+
+        .analytics {
+            color: #38bdf8;
         }
     </style>
 </head>
@@ -100,7 +113,7 @@
 
 <header>
     <h1>🏆 Chris DFS Lab</h1>
-    <p>Lineup builders, trimmers, late swap tools, and DFS project management</p>
+    <p>DFS lineup builders, trimmers, late swap tools, and model management</p>
 </header>
 
 <nav>
@@ -119,79 +132,98 @@
     <h2 class="section-title">DFS Tools</h2>
 
     <div class="grid">
+
         <div class="card">
+            <span class="badge">Production</span>
             <h3>⚾ MLB DFS</h3>
-            <p>Builder and trimmer for DraftKings MLB slates.</p>
+            <p>DraftKings MLB builder and trimmer for stacked lineup portfolios.</p>
             <a class="button" href="mlb.html">Open MLB</a>
         </div>
 
         <div class="card">
+            <span class="badge">Production</span>
             <h3>⚽ Soccer DFS</h3>
             <p>Ratings generator, lineup builder, and lineup trimmer.</p>
             <a class="button" href="soccer.html">Open Soccer</a>
         </div>
 
         <div class="card">
+            <span class="badge">Production</span>
             <h3>🏒 NHL DFS</h3>
             <p>Main optimizer, showdown builder, and lineup trimmer.</p>
             <a class="button" href="nhl.html">Open NHL</a>
         </div>
 
         <div class="card">
+            <span class="badge planned">Planned</span>
             <h3>🏀 NBA DFS</h3>
-            <p>Main optimizer, late swap tools, and showdown workflows.</p>
-            <span class="coming">Coming Soon</span>
+            <p>Main optimizer, late swap optimizer, and showdown tools.</p>
         </div>
 
         <div class="card">
+            <span class="badge planned">Planned</span>
             <h3>🏈 NFL DFS</h3>
-            <p>Late swap, trimmer, stacking, and bring-back workflows.</p>
-            <span class="coming">Coming Soon</span>
+            <p>Late swap, lineup trimmer, stacking, and bring-back workflows.</p>
         </div>
+
+        <div class="card">
+            <span class="badge planned">Planned</span>
+            <h3>🥊 MMA / NASCAR / PGA</h3>
+            <p>Additional sport-specific DFS models and portfolio tools.</p>
+        </div>
+
     </div>
 
     <h2 class="section-title">Project Management</h2>
 
     <div class="grid">
+
         <div class="card">
+            <span class="badge analytics">Reference</span>
             <h3>📘 Documentation</h3>
             <p>Upload requirements, workflow notes, and model assumptions.</p>
             <a class="button" href="docs.html">Open Docs</a>
         </div>
 
         <div class="card">
+            <span class="badge analytics">Inventory</span>
             <h3>🧰 Tool Registry</h3>
-            <p>Master inventory of all DFS tools and model versions.</p>
+            <p>Master list of every DFS model, tool, status, and version.</p>
             <a class="button" href="tools.html">Open Registry</a>
         </div>
 
         <div class="card">
+            <span class="badge analytics">Tracking</span>
             <h3>🕓 Version History</h3>
-            <p>Track production versions and major model changes.</p>
+            <p>Track production versions and major model updates.</p>
             <a class="button" href="version-history.html">Open History</a>
         </div>
 
         <div class="card">
+            <span class="badge analytics">Planning</span>
             <h3>🗺 Roadmap</h3>
-            <p>Future upgrades and project priorities.</p>
+            <p>Future upgrades, project priorities, and model ideas.</p>
             <a class="button" href="roadmap.html">Open Roadmap</a>
         </div>
+
     </div>
 
     <h2 class="section-title">Future Analytics</h2>
 
     <div class="grid">
+
         <div class="card">
+            <span class="badge planned">Coming Soon</span>
             <h3>📊 DFS Tracker</h3>
-            <p>ROI, contest results, sport breakdowns, and bankroll trends.</p>
-            <span class="coming">Coming Soon</span>
+            <p>Contest history, ROI by sport, contest type analysis, and bankroll trends.</p>
         </div>
 
         <div class="card">
+            <span class="badge planned">Coming Soon</span>
             <h3>💰 Bankroll Tracker</h3>
-            <p>Track deposits, withdrawals, entries, and profit/loss.</p>
-            <span class="coming">Coming Soon</span>
+            <p>Track deposits, withdrawals, entries, profit/loss, and long-term progress.</p>
         </div>
+
     </div>
 
 </div>
